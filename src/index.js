@@ -1,7 +1,7 @@
 import epxress from 'express';
 import { graphqlHTTP } from 'express-graphql';
 import schema from './schema';
-
+require('dotenv').config();
 const app = epxress();
 
 app.get('/', (req, res) => {
